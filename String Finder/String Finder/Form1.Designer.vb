@@ -27,12 +27,12 @@ Partial Class Form1
         Me.lblString = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtStartIndex = New System.Windows.Forms.TextBox()
+        Me.txtToFind = New System.Windows.Forms.TextBox()
         Me.lblResult = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtToFind = New System.Windows.Forms.TextBox()
-        Me.txtStartIndex = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -97,6 +97,29 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(323, 85)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 29)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "GO"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'txtStartIndex
+        '
+        Me.txtStartIndex.Location = New System.Drawing.Point(190, 85)
+        Me.txtStartIndex.Name = "txtStartIndex"
+        Me.txtStartIndex.Size = New System.Drawing.Size(100, 29)
+        Me.txtStartIndex.TabIndex = 9
+        '
+        'txtToFind
+        '
+        Me.txtToFind.Location = New System.Drawing.Point(277, 37)
+        Me.txtToFind.Name = "txtToFind"
+        Me.txtToFind.Size = New System.Drawing.Size(100, 29)
+        Me.txtToFind.TabIndex = 8
+        '
         'lblResult
         '
         Me.lblResult.Location = New System.Drawing.Point(99, 135)
@@ -123,29 +146,6 @@ Partial Class Form1
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Substring to find:"
         '
-        'txtToFind
-        '
-        Me.txtToFind.Location = New System.Drawing.Point(277, 37)
-        Me.txtToFind.Name = "txtToFind"
-        Me.txtToFind.Size = New System.Drawing.Size(100, 29)
-        Me.txtToFind.TabIndex = 8
-        '
-        'txtStartIndex
-        '
-        Me.txtStartIndex.Location = New System.Drawing.Point(190, 85)
-        Me.txtStartIndex.Name = "txtStartIndex"
-        Me.txtStartIndex.Size = New System.Drawing.Size(100, 29)
-        Me.txtStartIndex.TabIndex = 9
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(323, 85)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 29)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "GO"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(296, 384)
@@ -167,7 +167,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)

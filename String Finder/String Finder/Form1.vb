@@ -18,4 +18,11 @@
             MessageBox.Show("Enter a string to search for. ")
         End If
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        lblResult
+        lblString
+        txtStartIndex
+        txtToFind
+    End Sub
 End Class
