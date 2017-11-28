@@ -32,9 +32,9 @@ Partial Class Form1
         Me.RBBaconFlakes = New System.Windows.Forms.RadioButton()
         Me.RBGoldShaveings = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.CBBreadSticks = New System.Windows.Forms.CheckBox()
-        Me.CBCheeseSticks = New System.Windows.Forms.CheckBox()
         Me.CBCheese = New System.Windows.Forms.CheckBox()
+        Me.CBCheeseSticks = New System.Windows.Forms.CheckBox()
+        Me.CBBreadSticks = New System.Windows.Forms.CheckBox()
         Me.lblResult = New System.Windows.Forms.Label()
         Me.btnOrder = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -110,7 +110,7 @@ Partial Class Form1
         Me.GroupBox2.Size = New System.Drawing.Size(200, 128)
         Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
+        Me.GroupBox2.Text = "Toppings"
         '
         'RBCheese
         '
@@ -155,27 +155,7 @@ Partial Class Form1
         Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "GroupBox3"
-        '
-        'CBBreadSticks
-        '
-        Me.CBBreadSticks.AutoSize = True
-        Me.CBBreadSticks.Location = New System.Drawing.Point(6, 19)
-        Me.CBBreadSticks.Name = "CBBreadSticks"
-        Me.CBBreadSticks.Size = New System.Drawing.Size(81, 17)
-        Me.CBBreadSticks.TabIndex = 0
-        Me.CBBreadSticks.Text = "Breadsticks"
-        Me.CBBreadSticks.UseVisualStyleBackColor = True
-        '
-        'CBCheeseSticks
-        '
-        Me.CBCheeseSticks.AutoSize = True
-        Me.CBCheeseSticks.Location = New System.Drawing.Point(6, 41)
-        Me.CBCheeseSticks.Name = "CBCheeseSticks"
-        Me.CBCheeseSticks.Size = New System.Drawing.Size(91, 17)
-        Me.CBCheeseSticks.TabIndex = 1
-        Me.CBCheeseSticks.Text = "cheese sticks"
-        Me.CBCheeseSticks.UseVisualStyleBackColor = True
+        Me.GroupBox3.Text = "Sides"
         '
         'CBCheese
         '
@@ -187,12 +167,32 @@ Partial Class Form1
         Me.CBCheese.Text = "Even More Cheese"
         Me.CBCheese.UseVisualStyleBackColor = True
         '
+        'CBCheeseSticks
+        '
+        Me.CBCheeseSticks.AutoSize = True
+        Me.CBCheeseSticks.Location = New System.Drawing.Point(6, 41)
+        Me.CBCheeseSticks.Name = "CBCheeseSticks"
+        Me.CBCheeseSticks.Size = New System.Drawing.Size(91, 17)
+        Me.CBCheeseSticks.TabIndex = 1
+        Me.CBCheeseSticks.Text = "cheese sticks"
+        Me.CBCheeseSticks.UseVisualStyleBackColor = True
+        '
+        'CBBreadSticks
+        '
+        Me.CBBreadSticks.AutoSize = True
+        Me.CBBreadSticks.Location = New System.Drawing.Point(6, 19)
+        Me.CBBreadSticks.Name = "CBBreadSticks"
+        Me.CBBreadSticks.Size = New System.Drawing.Size(81, 17)
+        Me.CBBreadSticks.TabIndex = 0
+        Me.CBBreadSticks.Text = "Breadsticks"
+        Me.CBBreadSticks.UseVisualStyleBackColor = True
+        '
         'lblResult
         '
         Me.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblResult.Location = New System.Drawing.Point(32, 220)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(248, 66)
+        Me.lblResult.Size = New System.Drawing.Size(248, 58)
         Me.lblResult.TabIndex = 1
         Me.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -226,7 +226,7 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Ordering Food"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

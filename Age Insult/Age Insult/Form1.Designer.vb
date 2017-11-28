@@ -29,6 +29,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtAgeInput = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblMessage = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,6 +87,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lblMessage)
         Me.GroupBox1.Controls.Add(Me.txtAgeInput)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.lblResult)
@@ -94,7 +96,14 @@ Partial Class Form1
         Me.GroupBox1.Size = New System.Drawing.Size(282, 182)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        '
+        'lblMessage
+        '
+        Me.lblMessage.Location = New System.Drawing.Point(51, 156)
+        Me.lblMessage.Name = "lblMessage"
+        Me.lblMessage.Size = New System.Drawing.Size(160, 23)
+        Me.lblMessage.TabIndex = 6
+        Me.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
@@ -106,7 +115,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnInsult)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Age Insult Generator"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -119,5 +128,6 @@ Partial Class Form1
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtAgeInput As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents lblMessage As System.Windows.Forms.Label
 
 End Class
